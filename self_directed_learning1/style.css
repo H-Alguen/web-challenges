@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui;
+}
+
+h1{
+    color: snow;
+    padding-inline: 25px;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 2rem;
+    background-color: rgb(15, 15, 15);
+    position: fixed;
+    left: 0;
+    right:0;
+    top:0;
+    z-index: 3;
+}
+
+.navbar{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+.image-hero{
+    width: 100%;
+    height: 100%;
+    /* overflow:hidden; */
+    object-fit: cover;
+
+}
+.hero-section p{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    translate: -50%;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.menu-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 70vh; */
+    width: 100%;
+    margin: 2rem;
+}
+
+.menu-section h2{
+    margin-top: 70px;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.menu-section p{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.meals-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-top: 5rem;
+    list-style: none;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.meals-box{
+    background-color: rgb(38, 38, 38);
+    height: 500px;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.mealbox-header{
+    padding: 20px;
+    background-color:chocolate;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.mealbox-header:hover{
+    padding: 25px;
+    background-color:rgb(240, 141, 71);
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.meals-box p{
+    font-size: 1rem;
+}
+
+.box-price{
+    padding: 2rem;
+    background-color:rgb(224, 224, 224);
+    border-radius: 30px;
+    margin-top: 25px;
+    color: darkorange;
+    font-weight: bold;
+}
+
+.meal-section{
+    background-color:rgb(38, 38, 38);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.meal-section h2{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    margin-top: 70px;
+    font-weight: bold;
+    color: white;
+}
+.meal-section p{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: black
+}
+.subtitle{
+    color: white;
+}
+
+.meals-list-products{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 20px;
+    height: 600px;
+    padding-top: 5rem;
+    list-style: none;
+    width: 90%;
+
+}
+
+.meal-listbox-prodct{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.meal-listbox-prodct img{
+width: 125px;
+border-radius: 16px;
+
+}
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    margin: 2rem;
+    color: black;
+    font-size: 2rem;
+}
+
+.footer-section{
+
+    background-color: rgb(27, 27, 27);
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
