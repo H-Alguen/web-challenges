@@ -62,7 +62,7 @@ h1 {
 .box--one {
   background-color: lightblue;
 
-  width: 100px;
+  width: 20%;
   height: 100px;
 }
 
@@ -93,4 +93,53 @@ h1 {
 
 .box--five img {
   width: 100%;
+}
+
+@media (min-width: 600px){
+
+  .box--two {
+    background-color: lightgreen;
+  
+    width: 200px;
+    height: 100px;
+  }
+
+  .box--five img {
+    content: url("../img/cat_medium.jpg");
+    background-size: cover;
+  
+  }
+}
+
+@media (min-width: 1200px){
+
+  .box--two {
+    background-color: lightgreen;
+  
+    width: 400px;
+    height: 100px;
+  }
+
+  .box--five img {
+    content: url("../img/cat_large.jpg");
+    background-size: cover;
+  
+  }
+}
+
+@media (orientation: landscape) {
+  .box--three {
+    background-color: lightpink;
+  
+    width: 250px;
+    height: 50px;
+  }
+}
+
+
+@media (prefers-color-scheme: dark){
+  .box--four {
+    background-color: var(--color-granite);
+  }
+
 }
