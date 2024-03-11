@@ -18,10 +18,38 @@ For that:
  (HINT: you can add a 'scroll' event listener to the document )
  (HINT: you can change the width of an element like this: element.style.width = '10px')
 */
+// progressBar.style.width = 0;
 
 const progressBar = document.querySelector('[data-js="progress-bar"]');
-progressBar.style.width = 0;
 
-function calculateScrollPercentage() {
-  // progressBar.style.classList("progress-bar.width = "100%"");
-}
+document.addEventListener("scroll",() => {
+  const userPosition = window.scrollY;
+  const userBrowserViewHeightPercentage = ((userPosition / (document.body.clientHeight -window.innerHeight))* 100) +"%";
+
+  return progressBar.style.width = userBrowserViewHeightPercentage;
+});
+
+
+
+// function calculateScrollPercentage() {
+//   const userBrowserHeight = document.body.clientHeight;
+//   const userPosition = window.scrollY;
+
+//   const scrollPercentage = (userPosition / (userBrowserHeight - window.innerHeight)) * 100;
+//   const pogressBarUpdatePercentage = scrollPercentage +"%";
+//   return progressBar.style.width = pogressBarUpdatePercentage;
+// }
+
+//New Solution
+// const progressBar = document.querySelector('[data-js="progress-bar"]');
+// document.addEventListener("scroll", refreshProgressBar);
+// function refreshProgressBar() {
+//   progressBar.style.width = calculateScrollPercentage() + "%";
+// }
+// function calculateScrollPercentage() {
+//   const maxHeight = document.body.clientHeight;
+//   const userPosition = window.scrollY;
+//   const scrollPercentage =
+//     (userPosition / (maxHeight - window.innerHeight)) * 100;
+//   return scrollPercentage;
+// }
