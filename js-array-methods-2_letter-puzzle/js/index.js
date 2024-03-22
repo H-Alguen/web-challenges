@@ -72,7 +72,7 @@ const employeeWithId = employees.find((employee) => {
 const ednaInvestment = employees.find((employee) => {
   return (
     employee.firstName === "Edna" &&
-    employee.profession === "Inverstment Manager"
+    employee.profession === "Investment Manager"
   );
 });
 
@@ -86,9 +86,14 @@ const employeesSortedByAge = employees.toSorted((a, b) => a.age - b.age);
 // QUESTION 11: We want a new employees array sorted by last name descending (Z -> A)
 // Hint use toSorted()
 
-const employeesSortedByLastName = employees.toSorted((a, b) =>
-  a.lastName > b.lastName ? -1 : a.lastName < b.lastName
-);
+const employeesSortedByLastName = employees.sort((a, b) => {
+  const nameA = a.lastName.toLowerCase();
+  const nameB = b.lastName.toLowerCase();
+  if (nameA < nameB) return 1;
+  if (nameA > nameB) return -1;
+  return 0;
+});
+console.log(employeesSortedByLastName);
 
 // Great! 🎉 You got it! 🚀 Now you can read the solution of the letter puzzle. 💪
 
