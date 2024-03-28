@@ -1,4 +1,4 @@
-# React State: Journal App with Form Submit
+npm start# React State: Journal App with Form Submit
 
 In this challenge we want to store the entries information in a state to be able to add new entries.
 
